@@ -1,16 +1,6 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const pkg = require('./package')
 
-// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/mysite/'
-        }
-      }
-    : {}
-
 module.exports = {
   mode: 'spa',
 
@@ -25,7 +15,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/mysite/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/mySite/favicon.ico' },
       {
         rel: 'stylesheet',
         href:
@@ -80,5 +70,7 @@ module.exports = {
       }
     }
   },
-  ...routerBase
+  router: {
+    base: '/mySite/'
+  }
 }
