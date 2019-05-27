@@ -6,7 +6,7 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/<repository-name>/'
+          base: '/mysite/'
         }
       }
     : {}
@@ -79,9 +79,6 @@ module.exports = {
         })
       }
     }
-  },
-  router: {
-    base: '/mysite/'
   },
   ...routerBase
 }
