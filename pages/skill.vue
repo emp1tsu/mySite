@@ -3,23 +3,19 @@
     <v-container fluid>
       <v-layout align-center justify-center>
         <v-flex xs6>
-          <v-flex class="text-xs-center pa-5">
-            <v-avatar size="216">
-              <v-img src="https://cdn.vuetifyjs.com/images/cards/foster.jpg" />
-            </v-avatar>
-          </v-flex>
           <v-card>
             <v-layout>
               <v-flex class="pa-4">
                 <div>
-                  <div class="headline">About Me</div>
+                  <div class="headline">Skill</div>
                   <ul>
-                    <li>氏名：高橋涼</li>
-                    <li>年齢：22</li>
-                    <li>
-                      はじめまして。22歳SEの高橋涼(@emiptus0813)と申します。
-                      社会人3年目です。
-                    </li>
+                    <!-- あとでコンポーネント作る星5個中なんこ的な -->
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <li>Vuex</li>
+                    <li>VueRouter</li>
+                    <li>Visual Studio Code</li>
+                    <li>English</li>
                   </ul>
                 </div>
               </v-flex>

@@ -4,11 +4,11 @@
       <v-toolbar-title>empitsuについて</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>About me</v-btn>
-        <v-btn flat>Career</v-btn>
-        <v-btn flat>Skill</v-btn>
-        <v-btn flat>Certificate</v-btn>
-        <v-btn flat>Contact</v-btn>
+        <v-btn to="/" flat>About me</v-btn>
+        <v-btn to="/career" flat>Career</v-btn>
+        <v-btn to="/skill" flat>Skill</v-btn>
+        <v-btn to="/certificate" flat>Certificate</v-btn>
+        <v-btn to="/contact" flat>Contact</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <nuxt />
@@ -57,6 +57,14 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .background {
   position: absolute;
   display: block;
